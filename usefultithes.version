@@ -1,0 +1,17 @@
+{
+    "masterVersionFile":"https://raw.githubusercontent.com/SirHartley/Useful.Tithes/master/usefultithes.version",
+    "modName":"Useful.Tithes",
+    "modThreadId":,
+    "modVersion":
+    {
+        "major":1,
+        "minor":0,
+        "patch":"a"
+    },
+
+        #Link towards a direct download, fetched from the online version file
+        "directDownloadURL":"https://github.com/SirHartley/Useful.Tithes/releases/download/1.0.a/Useful.Tithes1.0.a.zip",
+
+        #Link towards a directly accessible text file, which can be used to display a changelog ingame, is fetched from the online version file.
+        "changelogURL":"https://raw.githubusercontent.com/SirHartley/Useful.Tithes/refs/heads/master/Changelog",
+}
