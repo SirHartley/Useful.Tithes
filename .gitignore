@@ -1,2 +1,3 @@
 # Project exclude paths
-/jars/
+/jars/src/bettertithes/
+/jars/src/src.jar
