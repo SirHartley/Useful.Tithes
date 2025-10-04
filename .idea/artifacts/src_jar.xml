@@ -2,7 +2,7 @@
   <artifact type="jar" build-on-make="true" name="src:jar">
     <output-path>$PROJECT_DIR$/jars/</output-path>
     <root id="archive" name="src.jar">
-      <element id="module-output" name="Better Pather Tithes" />
+      <element id="module-output" name="Useful Tithes" />
     </root>
   </artifact>
 </component>
