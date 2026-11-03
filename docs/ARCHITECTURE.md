@@ -17,7 +17,7 @@ Technical routing for the current implementation, checked against game `0.98a-RC
 | Another Pather fleet in a paid system asks for a tithe again | `LPTitheCheck` conditions -> `rules/IsSystemTithePaid` -> location memory `$LP_tithePaid` |
 | Tithe lasts the wrong time | Expiry arguments in `LPTithePay` (30 days) and `payMegaTitheConfirmSel` (100 days); `rules/SetSystemMemoryKey`; the listener copies the key's remaining expiry |
 | A rules command is not found | `data/config/settings.json` `ruleCommandPackages` -> `bettertithes.rules` |
-| Behavior in hyperspace | [Hyperspace](#hyperspace) |
+| Behavior in hyperspace (intended) | [Hyperspace](#hyperspace) |
 
 ## Registration and lifecycle
 
@@ -74,7 +74,7 @@ Each row replaces the whole vanilla row with the same id (mod rows win over vani
 
 ### Hyperspace
 
-"Location" in the commands and the listener is the containing location, which is hyperspace when the tithe is paid there. A tithe paid in hyperspace makes every Pather fleet in all of hyperspace non-hostile, and the hyperspace key stops `LPTitheCheck` for every Pather fleet in hyperspace for the duration. `reportFleetJumped` skips fleets that land in hyperspace, so a Pather fleet that jumps into hyperspace afterwards is neither flagged nor offers a tithe. `reportFleetSpawned` does not skip hyperspace.
+Intended behavior, confirmed by the author; do not report or change it as a bug. "Location" in the commands and the listener is the containing location, which is hyperspace when the tithe is paid there. A tithe paid in hyperspace makes every Pather fleet in all of hyperspace non-hostile, and the hyperspace key stops `LPTitheCheck` for every Pather fleet in hyperspace for the duration. `reportFleetJumped` skips fleets that land in hyperspace, so a Pather fleet that jumps into hyperspace afterwards is neither flagged nor offers a tithe. `reportFleetSpawned` does not skip hyperspace.
 
 ### Save data
 
