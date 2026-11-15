@@ -1,6 +1,6 @@
 # Architecture
 
-Technical routing for the current implementation, checked against game `0.98a-RC8`. Code paths below are relative to `jars/src/src/bettertithes/`; data paths are repository-relative. Search the named owner before adding another implementation.
+Technical routing for the current implementation, checked against game `0.98.5a-RC4`. Code paths below are relative to `jars/src/src/bettertithes/`; data paths are repository-relative. Search the named owner before adding another implementation.
 
 | Reference | Scope |
 |---|---|
@@ -63,7 +63,7 @@ Each row replaces the whole vanilla row with the same id (mod rows win over vani
 ### Hostility
 
 - `$cfai_makeNonHostile` is a flag with reasons (`Misc.setFlagWithReason`); it stays set while any reason is unexpired. The mod adds reason `LP_tithe` from the rows and `$LP_tithePaid` from the listener.
-- `TacticalModule.isHostileTo` (obfuscated `com.fs.starfarer.campaign.ai.TacticalModule` on `0.98a-RC8`) checks `$makeNonHostileTakesPriority` with `$cfai_makeNonHostile` first, then `$cfai_makeHostile`, then `$cfai_makeNonHostile`. Only the paying fleet gets `$makeNonHostileTakesPriority` (vanilla `LPTithePay`), so another Pather fleet in the system that carries a make-hostile flag stays hostile. Vanilla's `MakeNearbyFleetsNonHostile` behaves the same.
+- `TacticalModule.isHostileTo` (obfuscated `com.fs.starfarer.campaign.ai.TacticalModule` on `0.98.5a-RC4`) checks `$makeNonHostileTakesPriority` with `$cfai_makeNonHostile` first, then `$cfai_makeHostile`, then `$cfai_makeNonHostile`. Only the paying fleet gets `$makeNonHostileTakesPriority` (vanilla `LPTithePay`), so another Pather fleet in the system that carries a make-hostile flag stays hostile. Vanilla's `MakeNearbyFleetsNonHostile` behaves the same.
 - A flag lives on the fleet with its own expiry, so a fleet that leaves the paid system stays non-hostile until it expires.
 
 ### Listener timing

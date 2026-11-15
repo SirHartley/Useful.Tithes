@@ -4,7 +4,7 @@
     "author": "SirHartley",
     "version": "1.0.a",
     "description": "Paying tithes to a luddic path fleet causes all pather fleets in the star system to stop harassing you for a while.",
-    "gameVersion": "0.98a",
+    "gameVersion": "0.98.5a-RC4",
     "jars":["jars/src.jar"],
     "modPlugin":"bettertithes.plugins.ModPlugin"
 }

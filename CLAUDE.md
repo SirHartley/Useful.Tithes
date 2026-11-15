@@ -1,6 +1,6 @@
 # Useful.Tithes
 
-Starsector mod (game `0.98a`). Paying a tithe to a Luddic Path fleet makes every Pather fleet in that star system non-hostile while the tithe lasts, including fleets that spawn in or jump into the system later, and stops other Pather fleets there from asking again.
+Starsector mod (game `0.98.5a`). Paying a tithe to a Luddic Path fleet makes every Pather fleet in that star system non-hostile while the tithe lasts, including fleets that spawn in or jump into the system later, and stops other Pather fleets there from asking again.
 
 ## Required workflow
 
