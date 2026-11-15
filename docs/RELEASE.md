@@ -15,7 +15,7 @@ Work lands on `dev`. `master` is the release branch: it holds the online version
 | Version file | `usefultithes.version` | Online Version Checker file on `master`, registered in `data/config/version/version_files.csv`; stamped at packaging, committed back after a release |
 | Release builder | `jars/src/src/bettertithes/tools/ReleaseBuild.java` | `build` and `package`, run with `java <file>` |
 | Builder checks | `jars/src/src/bettertithes/tools/ReleaseBuildChecks.java` | Headless checks of changelog parsing, stamping and file filtering |
-| Build libraries | `lib/` | `starfarer.api.jar`, `json.jar`, `log4j-1.2.9.jar`, `lwjgl.jar`, `lwjgl_util.jar` from game `0.98a-RC8`, copied from Industrial.Evolution's `lib/` |
+| Build libraries | `lib/` | `starfarer.api.jar` from game `0.98.5a-RC6`; `json.jar`, `log4j-1.2.9.jar`, `lwjgl.jar`, `lwjgl_util.jar` from `0.98a-RC8` (unchanged in 0.98.5a), copied from Industrial.Evolution's `lib/` |
 | Release jar | `jars/release/usefultithes.jar` | Built by `build`, gitignored, runtime classes only; shipped as `jars/src.jar` |
 | Release workflow | `.github/workflows/release.yml` | Manual only: preview without a version, publish with one |
 
